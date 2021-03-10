@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 import prototypepollution from './routes/prototypepollution'
+import obscure from './routes/obscure/obscure'
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/proto', prototypepollution)
+app.use('/obscure', obscure)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
