@@ -2,7 +2,7 @@
 
 ### All the POCs and garbage code goes here.
 
-* Parameter Pollution - `routes/prototypepollution`
+* Prototype Pollution - `routes/prototypepollution`
 
     Normal assignment - `http://localhost:3000/proto?attr=__proto__&value={"admin":"true"}`
 
