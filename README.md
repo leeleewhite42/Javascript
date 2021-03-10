@@ -2,4 +2,4 @@
 
 ### All the POCs and garbage code goes here.
 
-* Parameter Pollution - `routes/parameterpollution`
+* Parameter Pollution - `routes/prototypepollution`
