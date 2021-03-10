@@ -10,10 +10,18 @@ router.get('/', function(req, res, next) {
   res.send("Yeah whatever")
 });
 
-// Something that might work?
+// Object.assign
 // Request - http://localhost:3000/proto/2?value={"__proto__":{"admin":"true"}}
 router.get('/2', function(req, res, next) {
     const obj = Object.assign({}, JSON.parse(req.query.value))
+    console.log(obj.__proto__)
+    res.send("Yeah whatever")
+  });
+
+// Spread operator
+// Request - http://localhost:3000/proto/3?value={"__proto__":{"admin":"true"}}
+router.get('/3', function(req, res, next) {
+    const obj = {... JSON.parse(req.query.value)}
     console.log(obj.__proto__)
     res.send("Yeah whatever")
   });
